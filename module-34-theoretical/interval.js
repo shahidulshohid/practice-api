@@ -26,3 +26,10 @@ const clockId = setInterval(() => {
     }
     console.log(clockId, num)
 },2000)
+
+
+let x = 1;
+let intervalId = setInterval(() => {
+ console.log(x++);
+ if (x > 3) clearInterval(intervalId);
+}, 1000);
