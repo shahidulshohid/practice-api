@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping charset</title>
+    <!-- daisyui and tailwind cdn --><link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+   <div class="w-11/12 mx-auto my-20">
+    <h1 class="mb-8 text-2xl text-center lg:text-4xl font-bold text-green-700">Store The Data In LocalStore</h1>
+    <div class="flex flex-col gap-6 lg:grid lg:grid-cols-4 lg:gap-12">
+        <div class="col-span-1 bg-slate-500 p-12 rounded-xl">
+            <input class="border w-full text-xl p-2 rounded-xl mb-5" id="product-name" type="text" placeholder="Product">
+            <input class="border w-full text-xl p-2 rounded-xl mb-5"  id="product-quantity" type="text" placeholder="Quantity">
+            <div class="flex justify-center items-center">
+                <button onclick="addProduct()" class="btn text-xl bg-purple-500">Add Product</button>
+            </div>
+        </div>
+        <div class="col-span-3 bg-slate-500 p-12 rounded-xl">
+            <ul id="product-container" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></ul>
+        </div>
+    </div>
+   </div>
+   <script src="cart5.js"></script>
+</body>
+</html>
